@@ -1,0 +1,23 @@
+parameters:
+  soccer.import_soccer_way.class: SoccerBundle\ImportSoccerWay
+  soccer.team_manager.class: SoccerBundle\Manager\TeamManager
+  soccer.game_manager.class: SoccerBundle\Manager\GameManager
+  soccer.standings_manager.class: SoccerBundle\Manager\StandingsManager
+
+services:
+  soccer.import_soccer_way:
+      class: SoccerBundle\ImportSoccerWay
+      autowire: true
+
+  soccer.team_manager:
+      class: %soccer.team_manager.class%
+      autowire: true
+
+  soccer.game_manager:
+          class: %soccer.game_manager.class%
+          autowire: true
+
+  soccer.standings_manager:
+              class: %soccer.standings_manager.class%
+              autowire: true
+

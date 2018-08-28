@@ -1,0 +1,3 @@
+socccer_homepage:
+    path:  /
+    defaults: { _controller: SoccerBundle:Default:index }
